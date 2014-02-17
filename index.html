@@ -1,0 +1,84 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Silly simple</title>
+</head>
+
+<body>
+<button id="silly">
+Show Time and unwrap my darling baby !
+</button>
+<button id="clear">
+clear
+</button>
+
+<div  style="background-color:cyan; background-image:url(images/adhu1.png) ; background-repeat:repeat-y;	">
+<div id="resultsLeft" style="background-image:url(images/adhu1.png);background-repeat:repeat-y;	"></div>
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="js/silly.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />	
+<script>
+$("#silly").click(function()
+
+{
+	SILLY.DoIt($("#resultsLeft"));
+	
+});
+
+$("#clear").click(function()
+{
+	
+
+	    $("#resultsLeft").html("  &nbsp;<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>");
+		$("#resultsLeft").css('background-image','images/adhu1.png');
+	     $("#resultsLeft").css("height", "100");
+		  $("#resultsLeft").css("width", "100");
+});
+</script>
+
+</body>
+</html>-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Silly simple</title>
+</head>
+
+<body>
+<button id="silly">
+Show Date and Time 
+</button>
+<button id="clear">
+clear
+</button>
+
+<div>
+<div id="resultsLeft"></div>
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="js/silly.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css" />	
+<script>
+$("#silly").click(function()
+
+{
+	SILLY.DoIt($("#resultsLeft"));
+	
+});
+
+$("#clear").click(function()
+{
+	  $("#resultsLeft").html("");
+		
+});
+</script>
+
+</body>
+</html>
+
